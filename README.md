@@ -1,19 +1,10 @@
-# Custom Build Example
+App web creada a fines de 2019, principios del 2020.
+# Que es?
+Una pequeña rest api para solicitar y encargar platos de comidas, ya establecidos.
+Contiene Login, Register y una tabla donde muestra los platos de comida disponibles y las ordenes ya realizadas, esta vinculada a una base de datos de Mongo DB
 
-This directory is a brief example of using a Custom Build script that can be deployed with Vercel and zero configuration.
-
-## Deploy Your Own
-
-Deploy your own Custom Built project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/main/examples/custom-build)
-
-_Live Example: https://custom-build.now-examples.now.sh_
-
-### How We Created This Example
-
-To get started deploying a Custom Built project with Vercel, you can use the [Vercel CLI](https://vercel.com/download) to initialize the project:
-
-```shell
-$ vercel init custom-build
-```
+Actualmente subida a Vercel y en funcionamiento
+https://resto-api-tbgo.vercel.app/
+User test:
+tester@dev
+123456

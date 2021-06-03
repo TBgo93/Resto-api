@@ -35,7 +35,7 @@ const renderItem = (item) => {
 
 const renderOrder = (order, meals) => {
     const meal = meals.find(meal => meal._id === order.meal_id)
-    const element = stringToHTML(`<li data-id="${order._id}">${meal.name} - ${order.user_email}</li>`)
+    const element = stringToHTML(`<li data-id="${order._id}">${meal.name} -> ${order.user_email}</li>`)
     return element
 }
 
@@ -152,7 +152,8 @@ const renderLogin = () => {
             })
             .then(x => x.json())
             .then(fetchedUser => {
-                localStorage.setItem('user', JSON.stringify(fetchedUser))
+                const { email, role, _id } = fetchedUser 
+                localStorage.setItem('user', JSON.stringify({ email, role, _id }))
                 user = fetchedUser
                 renderOrders()
             })
