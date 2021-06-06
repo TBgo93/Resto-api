@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": ""
+    "build": "cp -r frontend/ ./public"
   },
   "dependencies": {
     "cors": "^2.8.5",
