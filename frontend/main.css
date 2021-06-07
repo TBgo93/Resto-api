@@ -1,5 +1,5 @@
 body {
-    background-color: #eee;
+    background-color: #fffeeb;
 }
 h3{
     text-align: center;
@@ -22,6 +22,7 @@ div#meals {
     border-radius: 25px;
     padding: 16px;
     font-family: system-ui;
+    width: 100%;
 }
 #meals ul li {
     padding-top: 5px;
@@ -35,6 +36,7 @@ div#orders {
     border-radius: 25px;
     padding: 16px;
     font-family: monospace;
+    width: 100%;
 }
 #orders ul li {
     margin: 3px 0;
@@ -45,7 +47,7 @@ ul {
     list-style-type: none;
 }
 
-#submit {
+button#submit {
     background-color: #256681;
     color: #fff;
     padding: 16px 32px;
@@ -54,10 +56,10 @@ ul {
     margin: 15px;
     margin-left: 40px;
 }
-#submit:hover{
+button#submit:hover{
     background-color: #2d7d9e;
 }
-#reset {
+/* #reset {
     background-color: #812525;
     color: #fff;
     padding: 10px 15px;
@@ -69,24 +71,25 @@ ul {
 
 #reset:disabled {
     background-color: rgb(114, 106, 106);
-}
-#submit:disabled {
+} */
+button#submit:disabled {
     background-color: #ccc;
 }
 
 #meals-list li {
     cursor: pointer;
 }
-#logout{
+button#logout{
     background-color: #962525;
     color: #fff;
     padding: 4px 12px;
     border: solid 0px;
     border-radius: 20px;
     margin: 15px;
-    height: 50px;
+    position:absolute;
+    width: 80px;
 }
-#logout:hover{
+button#logout:hover{
     background-color: #791b1b;
     transition: 0.2s ease-in-out;
 }
@@ -122,7 +125,7 @@ form input {
     color: #555;
 }
 
-.btn {
+button.btn {
     border: solid 0px;
     padding: 10px 15px;
     background-color: #2280cc;
@@ -133,9 +136,8 @@ form input {
 }
 button.btn:hover{
     background-color: #175e98;
-    transition: 0.3s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
-
 .form-tittle {
     text-align: center;
     font-size: 24px;
