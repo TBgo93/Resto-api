@@ -31,24 +31,35 @@
     <template id="orders-view">
         <div id="meals">
             <h3>Platos de comidas</h3>
-            <hr>
             <ul id="meals-list">
                 <p>Cargando...</p>
             </ul>
             <form id="order">
                 <input id="meals-id" type="hidden" />
                 <button id="submit" disabled>Enviar</button>
-                <!-- <button id="reset" type="reset" disabled>Limpiar</button> -->
             </form>
         </div>
         <div id="orders">
             <h3>Ordenes realizadas</h3>
-            <hr>
             <ul id="orders-list">
                 <p>Cargando...</p>
             </ul>
         </div>
-        <button id="logout">Cerrar Sesion</button>
+        <button id="logout">Salir</button>
+    </template>
+    <template id="loading-view">
+        <div id="loading">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </template>
     <script src="main.js"></script>
 </html>
