@@ -69,7 +69,7 @@ const inicializaFormulario = () => {
 
         const token = sessionStorage.getItem('token')
 
-        fetch('https://resto-api-tbgo.vercel.app/api/orders', {
+        fetch('https://resto-api-eta.vercel.app/api/orders', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ const inicializaFormulario = () => {
 }
 
 const inicializaDatos = () => {
-    fetch('https://resto-api-tbgo.vercel.app/api/meals')
+    fetch('https://resto-api-eta.vercel.app/api/meals')
         .then(response => response.json())
         .then(data => {
             mealsState = data
@@ -106,7 +106,7 @@ const inicializaDatos = () => {
             mealsList.removeChild(mealsList.firstElementChild)
             listItems.forEach(element => mealsList.appendChild(element))
             submit.removeAttribute('disabled')
-            fetch('https://resto-api-tbgo.vercel.app/api/orders')
+            fetch('https://resto-api-eta.vercel.app/api/orders')
                 .then(response => response.json())
                 .then(ordersData => {
                     const ordersList = document.getElementById('orders-list')
@@ -144,7 +144,7 @@ const renderLogin = () => {
         const email = document.getElementById('email').value
         const password = document.getElementById('password').value
 
-        fetch('https://resto-api-tbgo.vercel.app/api/auth/login', {
+        fetch('https://resto-api-eta.vercel.app/api/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -161,7 +161,7 @@ const renderLogin = () => {
                 return respuesta.token
             })
             .then(token => {
-                return fetch('https://resto-api-tbgo.vercel.app/api/auth/me', {
+                return fetch('https://resto-api-eta.vercel.app/api/auth/me', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
